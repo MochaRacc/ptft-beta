@@ -5,22 +5,21 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <title>Home | Public Transport for Thornsbury (PTfT)</title>
+  <title>Suburban & Regional Trains | Public Transport for Thornsbury (PTfT)</title>
   <meta name="description" content="Your local transport operator for Thornsbury">
-  <meta property="og:title" content="Public Transport for Thornsbury (PTfT)">
+  <meta property="og:title" content="Suburban & Regional Trains | Public Transport for Thornsbury (PTfT)">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta name="og:description" content="Your local transport operator for Thornsbury">
-  <meta property="og:image" content="/img/favicon.png">
-  <meta name="theme-color" content="#4c26a1" />
+  <meta property="og:image" content="/favicon.png">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="icon" href="/img/favicon.png" sizes="any">
-  <link rel="apple-touch-icon" href="/img/favicon.png">
+  <link rel="icon" href="/favicon.png" sizes="any">
+  <link rel="apple-touch-icon" href="/favicon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="/fonts/ptft-sans.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone" rel="stylesheet">
   <link rel="stylesheet" href="/css/docs.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
@@ -43,14 +42,9 @@
 </head>
 
 <nav class="nsw-skip" aria-label="Skip to links">
-  <a href="#"><span>Skip to navigation</span></a>
+  <a href="#main-nav"><span>Skip to navigation</span></a>
   <a href="#"><span>Skip to content</span></a>
 </nav>
-<div class="nsw-masthead">
-  <div class="nsw-container">This is the prototype branch of the PTfT website, everything from this site will be moved over to the main website</div>
-</div>
-
-
 
 <header class="nsw-header">
   <div class="nsw-header__container">
@@ -58,15 +52,14 @@
       <div class="nsw-header__main">
         <div class="nsw-header__waratah">
             <a href="/">
-              <img src="/img/PTfT-W.svg" alt="PTfT Logo" width="250px"/>
+              <img src="/img/PTfT-c.svg" alt="PTfT Logo" width="250px"/>
             </a>
-        </div>       
+        </div>
       </div>
-
-      
       <div class="nsw-header__menu">
         <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
           <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
+          <span><span class="sr-only">Open</span> Menu</span>
         </button>
       </div>
     </div>
@@ -82,8 +75,8 @@
   </div>
   <ul class="nsw-main-nav__list">
     <li>
-      <a href="/trip-planner">
-        <span>Trip Planner</span>
+      <a href="https://designsystem.nsw.gov.au/index.html#about-dpc">
+        <span>Travel Info</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -101,42 +94,54 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="/trip-planner/">
-            <span>Trip Planner</span>
+          <a href="/travel-info/">
+            <span>Travel Info</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
         </div>
 
-        <div class="nsw-main-nav__description">Your one stop shop for all your trip planning needs, find information about maps, timetables, disruptions and more.</div>
+        <div class="nsw-main-nav__description"></div>
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="/trip-planner/trains">
-              <span>Trains</span>
+            <a href="/travel-info/trains">
+              <span>Suburban & Regional Trains</span>
+              <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
+            </a>
+            <div class="nsw-main-nav__sub-nav" id="sub-nav-1138" role="region" aria-label="Level 2 Submenu">
+              <div class="nsw-main-nav__header">
+                <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-1138">
+                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
+                  <span>Back<span class="sr-only"> to previous menu</span></span> 
+                </button>
+
+                <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
+                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
+                  <span class="sr-only">Close Menu</span>
+                </button>
+              </div>
+
+          <li>
+            <a href="/travel-info/trams">
+              <span>Trams</span>
             </a>
           </li>
 
           <li>
-            <a href="/trip-planner/light-rail">
-              <span>Light Rail</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/trip-planner/buses">
+            <a href="/travel-info/buses">
               <span>Buses</span>
             </a>
           </li>
 
           <li>
-            <a href="/trip-planner/metro">
-              <span>Metro</span>
+            <a href="/travel-info/coaches">
+              <span>Coaches</span>
             </a>
           </li>
 
           <li>
-            <a href="/trip-planner/regional">
-              <span>Regional Express (Trains & Coaches)</span>
+            <a href="/travel-info/metro">
+              <span>Metro</span>
             </a>
           </li>
 
@@ -144,8 +149,8 @@
       </div>
     </li>
     <li>
-      <a href="/travelsmart">
-        <span>TravelSmart</span>
+      <a href="/fares">
+        <span>Fares & tickets</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -163,7 +168,7 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="/travelsmart">
+          <a href="/fares">
             <span>Fares & tickets</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
@@ -173,26 +178,26 @@
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="/travelsmart/fares">
-              <span>Fares</span>
+            <a href="/fares/travelsmart">
+              <span>TravelSmart</span>
             </a>
           </li>
           <li>
-            <a href="/travelsmart/zones">
-              <span>Zones</span>
+            <a href="/fares/ticketnet">
+              <span>TicketNet</span>
             </a>
           </li>
           <li>
-            <a href="/travelsmart/travelpass">
-              <span>PTfT TravelPass (for interstate travel)</span>
+            <a href="/fares/travelpass">
+              <span>TravelPass</span>
             </a>
           </li>
         </ul>
       </div>
     </li>
     <li>
-<a href="/news-and-publications">
-        <span>News and publications</span>
+     <!-- <a href="https://designsystem.nsw.gov.au/index.html#publications">
+        <span>Publications</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -210,8 +215,8 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="/news-and-publications">
-            <span>News and publications</span>
+          <a href="https://designsystem.nsw.gov.au/index.html#publications">
+            <span>Publications</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
         </div>
@@ -220,21 +225,51 @@
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="/news-and-publications/news">
-              <span>News</span>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
             </a>
           </li>
           <li>
-            <a href="/news-and-publications/projects">
-              <span>Projects</span>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
             </a>
           </li>
           <li>
-            <a href="/news-and-publications/whats-on">
-              <span>Whats On! (Events)</span>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
             </a>
           </li>
-        </ul>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
+              <span>Level 2</span>
+            </a>
+          </li>  
+        </ul> -->
       </div>
     </li>
     <li>
@@ -256,10 +291,10 @@
   
 
   <!-- IMPORTANT NOTICE/MASSIVE DISRUPTION -->
-<!-- <div class="nsw-global-alert nsw-global-alert--light js-global-alert" role="alert">
+ <!-- <div class="nsw-global-alert nsw-global-alert--light js-global-alert" role="alert">
     <div class="nsw-global-alert__wrapper">
       <div class="nsw-global-alert__content">
-        <div class="nsw-global-alert__title">Welcome to the rebranded PTfT index pages</div>
+        <div class="nsw-global-alert__title">Transnet is officially moving to the new Public Transport for Thornsbury website from January 1st, 2026</div>
       </div>
 <div class="nsw-block">
   <button class="nsw-button nsw-button--dark js-open-dialog-single-cta" aria-haspopup="dialog">Click/tap for more info</button>
@@ -270,7 +305,7 @@
     <div class="nsw-dialog__container">
       <div class="nsw-dialog__top">
         <div class="nsw-dialog__title">
-          <h2 id="single-cta-title">You shouldn't be here...</h2>
+          <h2 id="single-cta-title">Transnet is moving to ptft.info</h2>
         </div>
         <div class="nsw-dialog__close">
           <button class="nsw-icon-button js-close-dialog">
@@ -280,133 +315,93 @@
         </div>
         </div>
       <div class="nsw-dialog__content">
-        <p>Either way, welcome to the PTfT playground for the November 1st rebrand, expect a lot of changes to this page, and more/less content</p>
-          <p>If you'd like to return to the normal ptft.info webpage, click/tap "Return"</p>
+        <p>From January 1st, 2026, Transnet will fully become  Public Transpot for Thornsbury (or PTfT for short)</p>
+          <p>Services from August 1st will no longer be branded as Transnet, as we move forward from the Transnet branding.</p>
+          <p>We (PTfT) will stop updating the Transnet website once the ptft.info website is completed</p>
+          <p>By pressing/clicking ptft.info, you acknowledge that the PTfT website will be still a work in progress, and may contain errors.</p>
       </div>
     </div>
     <div class="nsw-dialog__bottom">
-    <a href="https://ptft.info" class="nsw-button nsw-button--dark">Return</a>
+    <a href="https://ptft.info" class="nsw-button nsw-button--dark">Continue to ptft.info</a>
     </div>
   </div>
 </div>
       </button>
     </div>
-  </div>-->
+  </div> -->
 
  
 </head>
 
 <body>
 
- <div class="nsw-hero-banner nsw-hero-banner--dark">
+ <div class="nsw-m-right-md nsw-m-left-md">
+ <nav aria-label="Breadcrumbs" class="nsw-breadcrumbs js-breadcrumbs">
+  <ol>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/travel-info">Travel Info</a>
+      </li>
+      <li>
+        <a href="/travel-info/trains">Suburban & Regional Trains</a>
+      </li>
+  </ol>
+</nav> 
+</div>
+
+ <div class="nsw-m-right-md nsw-m-left-md">
+<p>&nbsp; </p>
+ </div>
+
+<div class="nsw-hero-banner nsw-hero-banner--dark nsw-hero-banner--wide nsw-hero-banner--lines">
   <div class="nsw-hero-banner__container">
     <div class="nsw-hero-banner__wrapper">
       <div class="nsw-hero-banner__content">
-        <h1>Upcoming trackworks on the Aynsdale Line</h1>
-        <p class="nsw-intro">Plan ahead from Upcoming trackworks, including this set of trackworks on the Aynsdale Line</p>
-        <div class="nsw-hero-banner__button"><a href="/trackworks" class="nsw-button nsw-button--white">Read more here</a></div>
+        <h1>Suburban & Regional Trains</h1>
       </div>
       <div class="nsw-hero-banner__box">
-        <img class="nsw-hero-banner__image" src="/img/works.png" alt="" />
+        <div class="nsw-hero-banner__lines"></div>
       </div>
     </div>
   </div>
 </div>
 
-
-
-
 <div class="nsw-m-right-md nsw-m-left-md">
 <div class="nsw-p-top-sm">
 <div class="nsw-callout">
   <div class="nsw-callout__content">
-    <p class="nsw-h1">Latest News & Publifications</p>
+    <p class="nsw-h1">Travel information</p>
   </div>
 </div>
 
 </div>
 
 <div class="nsw-grid">
-
-        <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--dark">
-      <div class="nsw-card__image">
-        <img src="/img/obc-lt.png" alt="Logo of O'Connors Bus Compnay, with an arrow pointing to operator Lotus Transit">
-      </div>
+  <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
+    <div class="nsw-card">
       <div class="nsw-card__content">
-        <div class="nsw-card__tag">Buses</div>
-        <div class="nsw-card__date">
-          <time datetime="2019-03-09">21 September 2025</time>
-        </div>
         <div class="nsw-card__title">
-          <a href="/transport-news/oconnors-becomes-lotus-transit">O'Connors will become Lotus Transit</a>
+          <a href="/travel-info/trains/network-map">Network Map</a>
         </div>
-        <div class="nsw-card__copy">
-          <p>From October 6th onwards, Lotus Transit will take over all routes & buses operated by O'Connors</p>
-        </div>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
-      </div>
-    </div>
-  </div>
-
-      <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--dark">
-      <div class="nsw-card__image">
-        <img src="/img/inw-upg.png" alt="Visualisations of the new Kyama Junction & Croydon Extensions">
-      </div>
-      <div class="nsw-card__content">
-        <div class="nsw-card__tag">Inner Northwest Line</div>
-        <div class="nsw-card__date">
-          <time datetime="2019-03-09">25 August 2025</time>
-        </div>
-        <div class="nsw-card__title">
-          <a href="/transport-news/inner-northwest-upgrades">We're upgrading the Inner Northwest Line</a>
-        </div>
-        <div class="nsw-card__copy">
-          <p>By creating 2 extensions from Central & Saunderland, connecting new suburban growth and Kyama Beach</p>
-        </div>
-        <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
-      </div>
-    </div>
-  </div>
-
-    <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--dark">
-      <div class="nsw-card__image">
-        <img src="/img/tbs-sbs-transfer.png" alt="Logos of Tallentyne Bus Service, Stockton Bus Service, with arrows pointing to operators CDC Thornsbury & O'Connors Bus Company">
-      </div>
-      <div class="nsw-card__content">
-        <div class="nsw-card__tag">Buses</div>
-        <div class="nsw-card__date">
-          <time datetime="2019-03-09">03 August 2025</time>
-        </div>
-        <div class="nsw-card__title">
-          <a href="/transport-news/tbs-sbs-transfer">Tallentyne & Stockton Bus Services are transferring</a>
-        </div>
-        <div class="nsw-card__copy">
-          <p>From August 11th, bus services operated by Tallentyne Bus Service & Stockton Bus Service are being transferred to other operators</p>
-        </div>
+        <!-- <div class="nsw-card__copy">
+          <p>With 3 new Metro lines connecting important services and towns, services starting October 2025 throughout</p>
+        </div> -->
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
       </div>
     </div>
   </div>
 
   <div class="nsw-col nsw-col-md-6 nsw-col-lg-4">
-    <div class="nsw-card nsw-card--dark">
-      <div class="nsw-card__image">
-        <img src="/img/metro.png" alt="Metro train">
-      </div>
+    <div class="nsw-card">
       <div class="nsw-card__content">
-        <div class="nsw-card__tag">Future Proof</div>
-        <div class="nsw-card__date">
-          <time datetime="2019-03-09">14 July 2025</time>
-        </div>
         <div class="nsw-card__title">
-          <a href="/transport-news/building-a-metro">We're building a new Metro network for 2026</a>
+          <a href="/travel-info/trains/disruptions">Disruptions</a>
         </div>
-        <div class="nsw-card__copy">
+        <!-- <div class="nsw-card__copy">
           <p>With 3 new Metro lines connecting important services and towns, services starting October 2025 throughout</p>
-        </div>
+        </div> -->
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
       </div>
     </div>
@@ -414,49 +409,6 @@
 
 
 </div>
-
-<!-- Disruption Tags - Only use for Trains page -->
-   <h1>Disruption tags test</h1>
-<div class="nsw-list nsw-list--8">
-    <span class="nsw-disruption-label nsw-disruption-label--good" style="border-radius: 100%;"></span><p>Operational</p>
-</div>
-
-<div class="nsw-list nsw-list--8">
-  <span class="nsw-disruption-label nsw-disruption-label--minor"></span><p>Minor delays</p>
-</div>
-
-<div class="nsw-list nsw-list--8">
-    <span class="nsw-disruption-label nsw-disruption-label--major"></span><p>Major delays</p>
-  </div>
-
-  <div class="nsw-list nsw-list--8"> 
-    <span class="nsw-disruption-label nsw-disruption-label--suspended"></span><p>Suspended</p>
-      </div>
-
-    <div class="nsw-list nsw-list--8">
-    <span class="nsw-disruption-label nsw-disruption-label--works"></span><p>Works ahead</p>
-        </div>
-
-  
-    <div class="nsw-list nsw-list--8">
-    <span class="nsw-disruption-label nsw-disruption-label--travel"></span><p>Travel Alert</p>
-        </div>
-
-      <div class="nsw-list nsw-list--8">
-    <span class="nsw-disruption-label nsw-disruption-label--cancelled"></span><p>Cancellation</p>
-        </div>
-  
-  <h1>Our operators</h1>
-  <div class="nsw-link-list">
-    <ul>
-      <li>
-        <a href="https://mckians.com" target="_blank" rel="noopener noreferrer">
-          <span>McKian's Bus Lines</span>
-          <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
-        </a>
-      </li>
-    </ul>
-  </div>
   
 
   <br>
