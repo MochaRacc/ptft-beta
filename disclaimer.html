@@ -5,13 +5,14 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <title>Disclaimer | Public Transport for Thornsbury (PTfT)</title>
+  <title>Disclaimer | Transnet</title>
   <meta name="description" content="Your local transport operator for Thornsbury">
-  <meta property="og:title" content="Disclaimer | Public Transport for Thornsbury (PTfT)">
+  <meta property="og:title" content="Disclaimer | Transnet">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta name="og:description" content="Your local transport operator for Thornsbury">
   <meta property="og:image" content="/favicon.png">
+  <meta name="theme-color" content="#009245" />
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="icon" href="/favicon.png" sizes="any">
@@ -53,14 +54,15 @@
       <div class="nsw-header__main">
         <div class="nsw-header__waratah">
             <a href="/">
-              <img src="./img/PTfT-c.svg" alt="PTfT Logo" width="250px"/>
+              <img src="/img/TN-w.svg" alt="Transnet Logo" width="250px"/>
             </a>
-        </div>
+        </div>       
       </div>
+
+      
       <div class="nsw-header__menu">
         <button type="button" class="js-open-nav" aria-expanded="false" aria-controls="main-nav">
           <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">menu</span>
-          <span><span class="sr-only">Open</span> Menu</span>
         </button>
       </div>
     </div>
@@ -76,8 +78,8 @@
   </div>
   <ul class="nsw-main-nav__list">
     <li>
-      <a href="https://designsystem.nsw.gov.au/index.html#about-dpc">
-        <span>Travel Info</span>
+      <a href="/pt">
+        <span>Public Transport</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -95,54 +97,36 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="./travel-info/">
-            <span>Travel Info</span>
+          <a href="/pt/">
+            <span>Public Transport</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
         </div>
 
-        <div class="nsw-main-nav__description"></div>
+        <div class="nsw-main-nav__description">Your one stop shop for all your trip planning needs, find information about maps, timetables, disruptions and more.</div>
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="./travel-info/trains">
-              <span>Suburban & Regional Trains</span>
-              <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
-            </a>
-            <div class="nsw-main-nav__sub-nav" id="sub-nav-1138" role="region" aria-label="Level 2 Submenu">
-              <div class="nsw-main-nav__header">
-                <button class="nsw-icon-button nsw-icon-button--flex js-close-sub-nav" type="button" aria-expanded="true" aria-controls="sub-nav-1138">
-                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_left</span>
-                  <span>Back<span class="sr-only"> to previous menu</span></span> 
-                </button>
-
-                <button class="nsw-icon-button js-close-nav" type="button" aria-expanded="true">
-                  <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">close</span>
-                  <span class="sr-only">Close Menu</span>
-                </button>
-              </div>
-
-          <li>
-            <a href="./travel-info/trams">
-              <span>Trams</span>
+            <a href="/pt/trains">
+              <span>Trains</span>
             </a>
           </li>
 
           <li>
-            <a href="./travel-info/buses">
+            <a href="/pt/buses">
               <span>Buses</span>
             </a>
           </li>
 
           <li>
-            <a href="./travel-info/coaches">
-              <span>Coaches</span>
+            <a href="/pt/ferries">
+              <span>Ferries</span>
             </a>
           </li>
 
           <li>
-            <a href="./travel-info/metro">
-              <span>Metro</span>
+            <a href="/pt/regional">
+              <span>Regional Express (Trains & Coaches)</span>
             </a>
           </li>
 
@@ -150,8 +134,8 @@
       </div>
     </li>
     <li>
-      <a href="/fares">
-        <span>Fares & tickets</span>
+      <a href="/travelsmart">
+        <span>TravelSmart</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -169,7 +153,7 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="/fares">
+          <a href="/travelsmart">
             <span>Fares & tickets</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
@@ -179,26 +163,26 @@
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="/fares/travelsmart">
-              <span>TravelSmart</span>
+            <a href="/travelsmart/fares">
+              <span>Fares</span>
             </a>
           </li>
           <li>
-            <a href="/fares/ticketnet">
-              <span>TicketNet</span>
+            <a href="/travelsmart/zones">
+              <span>Zones</span>
             </a>
           </li>
           <li>
-            <a href="/fares/travelpass">
-              <span>TravelPass</span>
+            <a href="/travelsmart/travelpass">
+              <span>PTfT TravelPass (for interstate travel)</span>
             </a>
           </li>
         </ul>
       </div>
     </li>
     <li>
-     <!-- <a href="https://designsystem.nsw.gov.au/index.html#publications">
-        <span>Publications</span>
+<a href="/news-and-publications">
+        <span>News and publications</span>
         <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_right</span>
       </a>
 
@@ -216,8 +200,8 @@
         </div>
 
         <div class="nsw-main-nav__title">
-          <a href="https://designsystem.nsw.gov.au/index.html#publications">
-            <span>Publications</span>
+          <a href="/news-and-publications">
+            <span>News and publications</span>
             <span class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">east</span>
           </a>
         </div>
@@ -226,62 +210,32 @@
 
         <ul class="nsw-main-nav__sub-list">
           <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
+            <a href="/news-and-publications/news">
+              <span>News</span>
             </a>
           </li>
           <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
+            <a href="/news-and-publications/projects">
+              <span>Projects</span>
             </a>
           </li>
           <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
+            <a href="/news-and-publications/whats-on">
+              <span>Whats On! (Events)</span>
             </a>
           </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://designsystem.nsw.gov.au/index.html#level-2">
-              <span>Level 2</span>
-            </a>
-          </li>  
-        </ul> -->
+        </ul>
       </div>
     </li>
     <li>
 
     <li>
-      <a href="./about">
+      <a href="/about">
         <span>About us</span>
       </a>    </li>
 
       <li>
-      <a href="./contact">
+      <a href="/contact">
         <span>Contact us</span>
       </a>    </li>
   </ul>
@@ -357,14 +311,14 @@ The other reason why I run it is so people can look at how much detail I put int
 
 <h2 style="font-family: 'Archivo', Helvetica, sans-serif;">Why put so much time and effort into something so small?</h2>
 <p style="font-family: 'Archivo', Helvetica, sans-serif;">I mean, why should I stop now? I put effort and time into this since I'm too much of a perfectionist when it comes to this. I've managed to rack up a steady 1,000 odd hours onto Transport Fever 2<br/>
-just trying to build the perfect railway, tramway & bus network (I suck at anything Freight, logistics/trucking, Ferries and/or Planes). And this is the best project I've made so far.</p>
+just trying to build the perfect train, ferry & bus network (I'm working on getting some freight stuff working, give me some time). And this is the best project I've made so far.</p>
 
 <h2 style="font-family: 'Archivo', Helvetica, sans-serif;">With very little people looking at it, why continue doing it?</h2>
 <p style="font-family: 'Archivo', Helvetica, sans-serif;">Blame my own consciousness, friends & various twitter polls to keep it alive.</p>
 
-<h2 style="font-family: 'Archivo', Helvetica, sans-serif;">Why PTfT? I liked Transnet as a name</h2>
-<p style="font-family: 'Archivo', Helvetica, sans-serif;">Honestly, Transnet as a name sounds clingy, I changed it since there is <b>A LOT</b> of "Trans" name transport agencies across Australia (e.g Transperth & Translink) and the rest of the world. <br/>
-Plus, Transnet <i>already exists</i> in South Africa. So, to avoid any confusion or any clingyness, I changed it to PTfT (yes, I went the TfNSW route, go ahead and mock me for it)</p>
+<h2 style="font-family: 'Archivo', Helvetica, sans-serif;">Why Transnet as a name?</h2>
+<p style="font-family: 'Archivo', Helvetica, sans-serif;">Honestly, Transnet as a name came to mind because of Transperth and Translink, both WA & QLD transport agencies respectivly, while there was a futile option changing the name <i>*cough cough* PTfT, </i>
+the Transnet name still stands to this day with the interest of others. While yes, Transnet <i>already exists</i> in South Africa, it was a mere coincidence of the name co-inciding with an already existing agency.</p>
 
 <h2 style="font-family: 'Archivo', Helvetica, sans-serif;">Do you have any personal socials?</h2>
 <a style="font-family: 'Archivo', Helvetica, sans-serif;" href="https://mochara.cc">Yes</a>
@@ -373,7 +327,7 @@ Plus, Transnet <i>already exists</i> in South Africa. So, to avoid any confusion
 <p style="font-family: 'Archivo', Helvetica, sans-serif;">This whole project is a passion project, let me have my fun here, come along for the journey if you want.</p>
 
 <p>&nbsp;</p>
-<img src="https://mochara.cc/logo.svg" alt="Mocha The Raccoon Logo" style="width: 15%;">
+<img src="https://mochara.cc/wordmark.svg" alt="Mocha The Raccoon Logo" style="width: 15%;">
 <p>&nbsp;</p>
 </div>
 
